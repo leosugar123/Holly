@@ -1,0 +1,71 @@
+.containerA{
+    font-family: monospace;
+    display: grid;
+    width: 100%;
+    height: 600%;
+    grid-template-columns: 200px 1fr 1 fr;
+    grid-template-rows: 235px 1fr 1 fr 100px;
+    grid-gap: 1rem; 
+    grid-template-areas:
+        "title title title title"
+        "searchbar searchbar searchbar searchbar"
+        "contactinfo blank form form"
+        "contactinfo blank form form"
+        "contactinfo blank form form"
+        "contactinfo blank form form"
+        "footer footer footer footer";
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #abd3ff;
+    font-family: "lato", sans-serif;
+}
+.searchbar{
+    grid-area: searchbar;
+    up: -10px;
+}
+.title{
+    background: white;
+    grid-area: title;
+}
+.contactinfo{
+    background-color: rgba(255, 255, 255, 0.5);
+     border: 4px solid white;
+    grid-area: contactinfo;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+.blank{
+    grid-area: blank;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.5);
+     border: 4px solid white;
+    grid-area: form;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    position: relative;
+    color: white;
+    font-family: monospace;
+}
+.fa-facebook{
+    color: white;
+}
+.fa-twitter{
+    color: white;
+}
+.fa-linkedin{
+    color: white;
+}
+.fa-instagram{
+    color: white;
+}
+.header{
+    grid-area: title;
+    grid-area: searchbar;
+}
